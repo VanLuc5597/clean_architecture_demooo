@@ -36,6 +36,7 @@ dependencies:
   flutter_rating_bar: ^4.0.1
   flutter_svg: ^1.1.6
   hooks_riverpod: ^2.3.6
+  intl: ^0.18.1
 
 dev_dependencies:
   flutter_test:

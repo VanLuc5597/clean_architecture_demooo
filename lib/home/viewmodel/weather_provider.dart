@@ -7,24 +7,22 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 class WeatherProvider extends ChangeNotifier {
   final _getWeatherUseCase = GetIt.instance.get<GetWeatherUseCase>();
-  WeatherEntity? weatherEntity = WeatherEntity(time: "123", nameProvince: "123", weatherIcon: "!23", weatherDescription: "!23");
-  String abc  = "1234";
+  WeatherEntity? weatherEntity;
 
   WeatherProvider() {
-    //fetchWeather();
-    print('123');
+    fetchWeather();
   }
 
-  // void fetchWeather() {
-  //   _getWeatherUseCase.invoke(null).listen((event) {
-  //     if (event.networkStatus == NetworkStatus.success) {
-  //       if (event.data != null) {
-  //         weatherEntity = event.data;
-  //         notifyListeners();
-  //       }
-  //     }
-  //   });
-  // }
+  void fetchWeather() {
+    _getWeatherUseCase.invoke(null).listen((event) {
+      if (event.networkStatus == NetworkStatus.success) {
+        if (event.data != null) {
+          weatherEntity = event.data;
+          notifyListeners();
+        }
+      }
+    });
+  }
 }
 
 final weatherProvider = ChangeNotifierProvider((ref) => WeatherProvider());

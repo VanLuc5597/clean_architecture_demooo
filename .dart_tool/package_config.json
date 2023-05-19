@@ -302,6 +302,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "intl",
+      "rootUri": "file:///Users/lucthanvan/.pub-cache/hosted/pub.dev/intl-0.18.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "io",
       "rootUri": "file:///Users/lucthanvan/.pub-cache/hosted/pub.dev/io-1.0.3",
       "packageUri": "lib/",
@@ -650,7 +656,7 @@
       "languageVersion": "2.17"
     }
   ],
-  "generated": "2023-05-10T09:38:13.378511Z",
+  "generated": "2023-05-17T08:00:35.410267Z",
   "generator": "pub",
   "generatorVersion": "2.19.6"
 }

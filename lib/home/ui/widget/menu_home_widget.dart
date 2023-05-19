@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 class MenuHomeWidget extends ConsumerWidget {
+  const MenuHomeWidget({super.key});
+
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return Stack(
@@ -21,8 +23,9 @@ class MenuHomeWidget extends ConsumerWidget {
           padding: const EdgeInsets.all(10),
           width: double.infinity,
           decoration: BoxDecoration(
-              color: CommonColor.colorWhite,
-              borderRadius: const BorderRadius.all(Radius.circular(5.0)),),
+            color: CommonColor.colorWhite,
+            borderRadius: const BorderRadius.all(Radius.circular(5.0)),
+          ),
           child: Column(
             children: [
               Row(
@@ -38,7 +41,9 @@ class MenuHomeWidget extends ConsumerWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 20,),
+              const SizedBox(
+                height: 20,
+              ),
               Row(
                 children: [
                   Expanded(
@@ -52,7 +57,9 @@ class MenuHomeWidget extends ConsumerWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 20,),
+              const SizedBox(
+                height: 20,
+              ),
               Row(
                 children: [
                   Expanded(

@@ -1,4 +1,4 @@
-#Fri May 12 10:18:23 ICT 2023
+#Wed May 17 15:37:05 ICT 2023
 base.0=/Users/lucthanvan/DATA/FlutterProject/flutter-clean-architecture-demo/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

@@ -1,4 +1,5 @@
 import 'package:architecture_demo/home/ui/widget/menu_home_widget.dart';
+import 'package:architecture_demo/home/ui/widget/weather_widget.dart';
 import 'package:architecture_demo/home/viewmodel/weather_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
@@ -12,11 +13,7 @@ class HomeScreen extends ConsumerWidget {
     return Scaffold(
       body: SafeArea(
         child: Column(
-          children: [
-            MenuHomeWidget(),
-            Text(weatherViewModel.abc)
-            // WeatherWidget()
-          ],
+          children: const [MenuHomeWidget(), WeatherWidget()],
         ),
       ),
     );

@@ -4,7 +4,10 @@ import 'package:data_layer/movie/provider/weather_remote_data_source.dart';
 import 'package:domain_layer/general/resource.dart';
 import 'package:domain_layer/home/enitiy/weather_entity.dart';
 import 'package:domain_layer/home/repository/weather_repository.dart';
+import 'package:domain_layer/movie/repository/movies_repository.dart';
+import 'package:injectable/injectable.dart';
 
+@Injectable(as: WeatherRepository)
 class WeatherProvider extends WeatherRepository {
   final WeatherRemoteDataSource weatherRemoteDataSource;
 
